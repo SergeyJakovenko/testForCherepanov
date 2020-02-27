@@ -23,7 +23,7 @@ static qreal normalizeAngle(qreal angle)
 //! [0]
 Mouse::Mouse()
     : angle(0), speed(0), mouseEyeDirection(0),
-      color(QRandomGenerator::global()->bounded(126), QRandomGenerator::global()->bounded(236), QRandomGenerator::global()->bounded(126))
+      color(150, 150, 150)
 
 {
     setTransform(QTransform().rotate(QRandomGenerator::global()->bounded(360 * 16)), true);
