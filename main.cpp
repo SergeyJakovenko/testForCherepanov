@@ -40,6 +40,8 @@ int main(int argc, char **argv)
     view.setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
 //! [5] //! [6]
     view.setWindowTitle(QT_TRANSLATE_NOOP(QGraphicsView, "Colliding Mice"));
+    view.showFullScreen();
+    view.setWindowFlags(Qt::CustomizeWindowHint);
     view.showNormal();
 
 
