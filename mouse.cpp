@@ -24,7 +24,6 @@ static qreal normalizeAngle(qreal angle)
 Mouse::Mouse()
     : angle(0), speed(0), mouseEyeDirection(0),
       color(150, 150, 150)
-
 {
     setTransform(QTransform().rotate(QRandomGenerator::global()->bounded(360 * 16)), true);
     startTimer(1000 / 33);
